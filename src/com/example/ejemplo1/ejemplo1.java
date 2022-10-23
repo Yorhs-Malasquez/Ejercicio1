@@ -5,6 +5,10 @@ import java.util.List;
 
 public class ejemplo1 {
     public static void main(String[] args) {
+        Mensaje msg=new Mensaje();
+        String nombre = msg.solicitaDatos("Escribe tu nombre: ");
+        msg.saludar(nombre);
+
         List<String> companyList= Arrays.asList("Google","Yahoo","Facebook","","Twitter","LinkedIn");
         System.out.println("Company List: "+companyList);
 
